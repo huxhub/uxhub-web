@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cypher Capital recreation
 
-## Getting Started
+A local Next.js 16 recreation of [cyphercapital.com](https://www.cyphercapital.com/), based on the reference available on 6 October 2026.
 
-First, run the development server:
-
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. `npm run build` creates the production build; `npm start` serves it.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The homepage preserves the reference's Instrument Sans font, responsive type sizes, spacing, section layouts, SVG artwork, liquid chrome WebGL hero, chrome symbol introduction, interpolated scroll background, dark theme transition, and footer. The navigation menu supports keyboard focus, Escape, and mobile layouts. Forty-one routes include the main pages, leadership biographies, and insights. Fonts and images are served locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/components/` contains the interactive React components.
+- `src/content/pages.json` contains the captured page content, rendered as React elements on the server. Internal links use Next.js navigation.
+- `src/app/reference.css` preserves the reference's design tokens and responsive styling. `globals.css` supplies the interactive shell.
+- `src/lib/reference-effects.js` isolates the reference's procedural rendering primitives. It has no dependency on remote scripts or the original application runtime.
+- `scripts/capture-reference.mjs` refreshes the public content, CSS, and local image/font assets from the reference.
 
-## Learn More
+The location image transition and interior-page text sheen use simpler treatments than the reference. Content is a local snapshot, not a live CMS integration. Shader highlights vary with animation time and GPU; exact pixel equality across devices is not expected.
 
-To learn more about Next.js, take a look at the following resources:
+## Verification
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+With the development server running:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm run lint
+npm run build
+node scripts/verify.mjs
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Browser verification checks the animated hero, font metrics, menu/Escape behavior, theme transition, all 41 routes, image loading, profile navigation, location tabs, mobile overflow, and reduced motion. Screenshots are saved to `artifacts/`. Set `PREVIEW_URL` to verify a different local port.
