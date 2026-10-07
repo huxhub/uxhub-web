@@ -66,15 +66,9 @@ try {
     assert.equal(response.status(), 200, route);
   }
   await page.goto(base + "/services", { waitUntil: "networkidle" });
-  const disclosure = page.getByRole("button", {
-    name: "0→1 Product Strategy",
-    exact: true,
-  });
-  await disclosure.click();
-  assert.equal(await disclosure.getAttribute("aria-expanded"), "true");
-  await page
-    .getByRole("link", { name: "Explore Product Growth", exact: true })
-    .click();
+  assert.equal(await page.locator('[data-service-practice]').count(), 3);
+  assert.equal(await page.locator('.services-capability-link').count(), 35);
+  await page.getByRole("link", { name: "0→1 Product Strategy 01", exact: true }).click();
   await page.waitForURL("**/product-growth");
   await page.goto(base + "/global-presence", { waitUntil: "networkidle" });
   await page.getByRole("button", { name: "KSA", exact: true }).click();

@@ -1,0 +1,250 @@
+{
+  "id": "product",
+  "label": "Pricing Super Intelligence",
+  "url": "https://uxhubglobal.com/product.html",
+  "canonical": "https://uxhubglobal.com/product.html",
+  "scrapedAt": "2026-10-07T10:45:22.641Z",
+  "metadata": {
+    "title": "Pricing Super Intelligence | Real-Time Competitor Price Tracking & Dynamic Repricing | UX Hub",
+    "description": "Automated competitor price monitoring and dynamic repricing software across Amazon, Noon, Trendyol, and GCC e-commerce stores. Track 50,000+ SKUs with instant alerts.",
+    "keywords": "competitor price tracking software, pricing intelligence platform GCC, automated repricing Amazon Noon, price monitoring Saudi Arabia, MAP compliance software, price scraping software, e-commerce pricing optimization",
+    "openGraph": {
+      "title": "UX Hub Pricing Super Intelligence | Competitor Price Tracking Platform",
+      "description": "Monitor competitor prices in real time across the GCC. Automated SKU matching, price drop alerts, and dynamic margin-protecting repricing.",
+      "image": "https://uxhubglobal.com/uxhub-logo.svg",
+      "url": "https://uxhubglobal.com/product.html"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "UX Hub Pricing Super Intelligence",
+        "operatingSystem": "Web, Cloud",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Competitor Price Tracking and Dynamic Repricing",
+        "description": "Enterprise competitor price monitoring, automated SKU catalog matching, price drop alerts, MAP violation tracking, and dynamic repricing for e-commerce brands in India, Saudi Arabia, and the GCC.",
+        "url": "https://uxhubglobal.com/product.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "name": "14-Day Free Trial",
+          "url": "https://uxhubglobal.com/registration.html"
+        },
+        "featureList": [
+          "Automated SKU & Catalog Mapping with 99.4% Accuracy",
+          "Omnichannel Price Tracking across Amazon, Noon, Trendyol, Jarir, and Direct Stores",
+          "Sub-120s Real-time Price Drop Alerts via Email, Slack & Webhooks",
+          "Algorithmic Dynamic Repricing with Margin Guardrails",
+          "Multi-Currency Support (SAR, AED, INR, USD, KWD, QAR, BHD, OMR)",
+          "MAP Compliance & Basket Scraping"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "UX Hub Global",
+          "url": "https://uxhubglobal.com/"
+        }
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    },
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    }
+  ],
+  "footer": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Are You Losing SalesBecause YourCompetitors ChangePrices Before YouKnow It?"
+    },
+    {
+      "level": "h2",
+      "text": "Your competitors are watching the market. You should be too."
+    },
+    {
+      "level": "h2",
+      "text": "Your competitors don't waitfor your weekly pricingreview."
+    },
+    {
+      "level": "h2",
+      "text": "MAP. MONITOR. REACT.WIN."
+    },
+    {
+      "level": "h3",
+      "text": "Map your products against competitors."
+    },
+    {
+      "level": "h3",
+      "text": "Automatically monitor competitor prices."
+    },
+    {
+      "level": "h3",
+      "text": "Get alerted when prices change."
+    },
+    {
+      "level": "h3",
+      "text": "Make faster, data-driven pricing decisions."
+    },
+    {
+      "level": "h2",
+      "text": "Built for GCC E-commerce"
+    },
+    {
+      "level": "h2",
+      "text": "See what your competitors are doingacross the channels that matter."
+    },
+    {
+      "level": "h2",
+      "text": "See the market. Not just your own store."
+    },
+    {
+      "level": "h2",
+      "text": "More than price tracking."
+    },
+    {
+      "level": "h4",
+      "text": "Competitor Price Monitoring"
+    },
+    {
+      "level": "h4",
+      "text": "Price Change Alerts"
+    },
+    {
+      "level": "h4",
+      "text": "Historical Price Data"
+    },
+    {
+      "level": "h4",
+      "text": "Product Matching"
+    },
+    {
+      "level": "h4",
+      "text": "Price Comparison"
+    },
+    {
+      "level": "h4",
+      "text": "Marketplace Monitoring"
+    },
+    {
+      "level": "h4",
+      "text": "Stock Availability"
+    },
+    {
+      "level": "h4",
+      "text": "MAP Monitoring"
+    },
+    {
+      "level": "h4",
+      "text": "Pricing Analytics"
+    },
+    {
+      "level": "h2",
+      "text": "Built for teams that compete on price."
+    },
+    {
+      "level": "h3",
+      "text": "E-commerce Brands"
+    },
+    {
+      "level": "h3",
+      "text": "Marketplace Sellers"
+    },
+    {
+      "level": "h3",
+      "text": "Retailers & Distributors"
+    },
+    {
+      "level": "h3",
+      "text": "Manufacturers"
+    },
+    {
+      "level": "h2",
+      "text": "Stop discovering pricing problems afteryour sales drop."
+    }
+  ],
+  "forms": [],
+  "faqs": [],
+  "contentSummary": {
+    "totalHeadings": 27,
+    "totalForms": 0,
+    "totalFaqs": 0,
+    "characterCount": 7055,
+    "wordCount": 1005
+  },
+  "markdown": "[![UX Hub](uxhub-logo.svg)](index.html) [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) **[Button: ]** [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) UXHUB PRICING SUPER INTELLIGENCE \n\n# Are You Losing Sales\nBecause Your\nCompetitors Change\nPrices Before You\nKnow It?\n\nMonitor competitor prices across the GCC. Get alerted when prices change. Make faster, data-driven pricing decisions.\n\nTrack your products against competitors across marketplaces and e-commerce websites. Know who changed their price, what changed, and when it happened — so your team can react faster.\n\n [START YOUR FREE 14-DAY TRIAL →](registration.html) [TALK TO A PRICING EXPERT →](contact.html) 14-day free trial • No credit card required ILLUSTRATIVE MARKET VIEW PRODUCT Premium Travel Luggage 28\" YOUR PRICE SAR 299 Competitor A SAR 279 ↓ Competitor B SAR 319 ↑ Competitor C SAR 289 ↓ Competitor price history • 30 days — You — Comp. A PRICE CHANGE DETECTED Competitor A reduced the price. SAR 299 → SAR 279 - SAR 20 \n\n## Your competitors are watching the market. You should be too.\n\n Amazon Noon Trendyol Jarir Centrepoint E-commerce Websites Other Marketplaces \n\nMonitor leading marketplaces and e-commerce websites across the GCC, subject to platform availability and monitoring configuration.\n\n THE PROBLEM \n\n## Your competitors don't wait\nfor your weekly pricing\nreview.\n\nPrices change every day. Competitors launch promotions. Marketplace sellers change prices. Products go in and out of stock.\n\nBy the time someone manually discovers the change, the opportunity may already be gone.\n\n PRICE CHANGES \n\nCompetitors can change prices without your team noticing.\n\n MANUAL MONITORING \n\nChecking hundreds or thousands of products manually doesn't scale.\n\n MARGIN PRESSURE \n\nWithout market visibility, you may discount unnecessarily.\n\n REACTIVE DECISIONS \n\nDiscover pricing problems only after they start affecting performance.\n\n THE UXHUB PRICING SUPER INTELLIGENCE ENGINE \n\n## MAP. MONITOR. REACT.\nWIN.\n\n 01 — MAP \n\n### Map your products against competitors.\n\nMatch your products with comparable competitor products and understand exactly where you stand.\n\n Know exactly who you're competing against. YOUR PRODUCT Premium Travel Luggage 28\" VS COMPETITOR PRODUCT Premium Luggage 28\" Brand Voyager Voyager Model VX-28 VX-28 SKU UXL-2801 VG-28-BLK Price SAR 299 SAR 289 Availability In stock In stock Match confirmed 02 — MONITOR \n\n### Automatically monitor competitor prices.\n\nStop manually checking marketplaces and competitor websites.\n\n Turn manual price checking into automated monitoring. Amazon SAR 299 Monitored Noon SAR 289 Monitored Competitor Website SAR 309 Monitored Marketplace Seller SAR 279 Monitored 03 — REACT \n\n### Get alerted when prices change.\n\nKnow when a competitor changes their price so your team can investigate and respond faster.\n\n Know what changed before it becomes a bigger problem. PRICE CHANGE ALERT Competitor Brand X Product Premium Travel Luggage Previous SAR 299 New SAR 269 Change -10.0% 04 — WIN \n\n### Make faster, data-driven pricing decisions.\n\nUse competitive market visibility to understand pricing movements, protect competitiveness and make better commercial decisions.\n\n Better visibility. Faster decisions. Price position vs market Illustrative +4.2% REGIONAL FOCUS \n\n## Built for GCC E-commerce\n\nWhether you sell through marketplaces, your own website, or multiple online channels, competitive pricing becomes harder to manage as your product catalog and channel mix grow.\n\n Monitor competitive pricing across markets, currencies and online channels based on your monitoring requirements. ABSTRACT VIEW • SAR PRIMARY CHANNELS \n\n## See what your competitors are doing\nacross the channels that matter.\n\n 01 Marketplaces 02 E-commerce Websites 03 Retailers 04 Distributors 05 Brands 06 Sellers Amazon Noon Trendyol Jarir Centrepoint \n\nMarketplace monitoring availability depends on the specific marketplace, website structure and monitoring configuration.\n\n ANALYTICS \n\n## See the market. Not just your own store.\n\n Market overview • Premium Travel Luggage 28\" ILLUSTRATIVE EXAMPLE Your Average Price SAR 299 Market Average SAR 287 Lowest Competitor SAR 269 Highest Competitor SAR 329 Price Position +4.2% Price Changes 18 Competitors Monitored 24 Historical pricing • 90 days Your price Market avg Lowest Recent alerts Brand X SAR 299 → 269 ↓ 2h ago Competitor A SAR 299 → 279 ↓ 5h ago Competitor B SAR 309 → 319 ↑ 1d ago \n\n| RANK | COMPETITOR | CHANNEL | PRICE | 30D CHANGE |\n| --- | --- | --- | --- | --- |\n| #1 | Brand X | Noon | SAR 269 | - 10.0% |\n| #2 | Competitor A | Amazon | SAR 279 | - 6.7% |\n| #3 | Competitor C | Website | SAR 289 | - 3.3% |\n| #4 | Marketplace Seller | Amazon | SAR 299 | 0.0% |\n| #5 | Competitor B | Noon | SAR 319 | +3.2% |\n| #6 | Premium Store | Website | SAR 329 | +1.9% |\n\n FEATURES \n\n## More than price tracking.\n\n#### Competitor Price Monitoring\n\nTrack competitor pricing across relevant websites and marketplaces.\n\n#### Price Change Alerts\n\nKnow when competitors increase or decrease their prices.\n\n#### Historical Price Data\n\nUnderstand how competitor prices move over time.\n\n#### Product Matching\n\nMap your products against comparable competitor products.\n\n#### Price Comparison\n\nUnderstand where your pricing sits against the market.\n\n#### Marketplace Monitoring\n\nMonitor relevant online marketplace listings.\n\n#### Stock Availability\n\nIdentify relevant changes in competitor availability where supported.\n\n#### MAP Monitoring\n\nMonitor pricing against minimum advertised price requirements where applicable.\n\n#### Pricing Analytics\n\nTurn market data into actionable pricing intelligence.\n\n USE CASES \n\n## Built for teams that compete on price.\n\n### E-commerce Brands\n\nMonitor competitor prices and protect your market position.\n\n### Marketplace Sellers\n\nUnderstand pricing movements across competing sellers.\n\n### Retailers & Distributors\n\nTrack competitor and reseller pricing across online channels.\n\n### Manufacturers\n\nMonitor market pricing and identify potential pricing violations.\n\n## Stop discovering pricing problems after\nyour sales drop.\n\nYour pricing team shouldn't have to discover competitive changes through declining sales, customer complaints or manual marketplace checks.\n\n 01 KNOW EARLIER \n\nKnow when competitors change prices.\n\n 02 UNDERSTAND FASTER \n\nSee how the market is moving.\n\n 03 REACT SMARTER \n\nMake faster, data-driven pricing decisions.\n\n KNOW WHEN THE MARKET MOVES. [![UX Hub](uxhub-logo.svg)](index.html) \n\nDigital Business Growth Consultancy\n\nIndia ↔ KSA\n\n [Services](services.html) [About](about.html) [Insights](insights.html) [Product](product.html) [Contact](contact.html) LinkedIn — Coming Soon © UX HUB. ALL RIGHTS RESERVED. BUILD · LAUNCH · GROW · SCALE"
+}

@@ -1,4 +1,5 @@
 import "./reference.css";
+import "./price-intelligence.css";
 import "./globals.css";
 import Header from "@/components/Header";
 import HoverEffects from "@/components/HoverEffects";

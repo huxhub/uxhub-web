@@ -1,0 +1,108 @@
+{
+  "siteUrl": "https://uxhubglobal.com",
+  "scrapedAt": "2026-10-07T10:45:24.866Z",
+  "totalPages": 7,
+  "pages": [
+    {
+      "id": "home",
+      "label": "Homepage",
+      "url": "https://uxhubglobal.com/",
+      "title": "UX Hub | Digital Business Growth Consultancy & Enterprise Software | India & KSA",
+      "description": "UX Hub is a leading Digital Business Growth Consultancy & Software Solutions firm across India, Saudi Arabia & GCC. Build, launch & scale digital products, competitor price intelligence, and commerce growth.",
+      "wordCount": 505,
+      "files": {
+        "html": "scraped_content/html/home.html",
+        "markdown": "scraped_content/markdown/home.md",
+        "json": "scraped_content/json/home.json"
+      }
+    },
+    {
+      "id": "services",
+      "label": "Services",
+      "url": "https://uxhubglobal.com/services.html",
+      "title": "Growth Services & Enterprise Solutions | UX Hub | India & KSA",
+      "description": "Discover UX Hub services across Product Growth (0→1), E-commerce Scaling, GTM Strategy, and Digital Experience across India and Saudi Arabia (KSA).",
+      "wordCount": 308,
+      "files": {
+        "html": "scraped_content/html/services.html",
+        "markdown": "scraped_content/markdown/services.md",
+        "json": "scraped_content/json/services.json"
+      }
+    },
+    {
+      "id": "about",
+      "label": "About UX Hub",
+      "url": "https://uxhubglobal.com/about.html",
+      "title": "About UX Hub | Cross-Border Digital Growth Consultancy | India & KSA",
+      "description": "Learn about UX Hub, a Digital Business Growth Consultancy working across India and KSA at the intersection of product, e-commerce, technology and enterprise software.",
+      "wordCount": 230,
+      "files": {
+        "html": "scraped_content/html/about.html",
+        "markdown": "scraped_content/markdown/about.md",
+        "json": "scraped_content/json/about.json"
+      }
+    },
+    {
+      "id": "product",
+      "label": "Pricing Super Intelligence",
+      "url": "https://uxhubglobal.com/product.html",
+      "title": "Pricing Super Intelligence | Real-Time Competitor Price Tracking & Dynamic Repricing | UX Hub",
+      "description": "Automated competitor price monitoring and dynamic repricing software across Amazon, Noon, Trendyol, and GCC e-commerce stores. Track 50,000+ SKUs with instant alerts.",
+      "wordCount": 1005,
+      "files": {
+        "html": "scraped_content/html/product.html",
+        "markdown": "scraped_content/markdown/product.md",
+        "json": "scraped_content/json/product.json"
+      }
+    },
+    {
+      "id": "insights",
+      "label": "Insights & Case Studies",
+      "url": "https://uxhubglobal.com/insights.html",
+      "title": "Insights & Research | UX Hub | Digital Commerce & Product Strategy",
+      "description": "Perspectives on digital product growth, GCC e-commerce trends, dynamic repricing algorithms, and cross-border expansion from UX Hub.",
+      "wordCount": 189,
+      "files": {
+        "html": "scraped_content/html/insights.html",
+        "markdown": "scraped_content/markdown/insights.md",
+        "json": "scraped_content/json/insights.json"
+      }
+    },
+    {
+      "id": "contact",
+      "label": "Contact & Advisory",
+      "url": "https://uxhubglobal.com/contact.html",
+      "title": "Contact UX Hub | Digital Business Growth Consultancy | India & KSA",
+      "description": "Initiate engagement with UX Hub. Growth advisory, custom enterprise software, and competitor pricing solutions across India and Saudi Arabia (KSA).",
+      "wordCount": 173,
+      "files": {
+        "html": "scraped_content/html/contact.html",
+        "markdown": "scraped_content/markdown/contact.md",
+        "json": "scraped_content/json/contact.json"
+      }
+    },
+    {
+      "id": "registration",
+      "label": "14-Day Free Trial Registration",
+      "url": "https://uxhubglobal.com/registration.html",
+      "title": "Register and try Price2Spy for free | 14-Day Free Trial | UX Hub",
+      "description": "Register and try Price2Spy for free. An all in one solution for product matching, price monitoring, dynamic pricing, pricing analytics, site scraping and a lot more!",
+      "wordCount": 234,
+      "files": {
+        "html": "scraped_content/html/registration.html",
+        "markdown": "scraped_content/markdown/registration.md",
+        "json": "scraped_content/json/registration.json"
+      }
+    }
+  ],
+  "assetFiles": [
+    "scraped_content/assets/styles.css",
+    "scraped_content/assets/product.css",
+    "scraped_content/assets/script.js",
+    "scraped_content/assets/uxhub-logo.svg",
+    "scraped_content/reference/robots.txt",
+    "scraped_content/reference/sitemap.xml",
+    "scraped_content/reference/llms.txt",
+    "scraped_content/reference/llms-full.txt"
+  ]
+}

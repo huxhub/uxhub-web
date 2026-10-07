@@ -18,16 +18,20 @@ export default function BrandIntro() {
     }
     document.documentElement.setAttribute("data-entry", "");
     document.documentElement.setAttribute("data-intro-playing", "");
-    let hide;
-    const start = setTimeout(() => {
+    let docking;
+    const complete = () => {
       release();
+      setFinished(true);
+    };
+    const start = setTimeout(() => {
+      document.documentElement.removeAttribute("data-entry");
       root.current?.classList.add("docking");
       const target = document
         .querySelector(".site-brand svg")
         ?.getBoundingClientRect();
       const current = mark.current?.getBoundingClientRect();
       if (target && current) {
-        mark.current.animate(
+        docking = mark.current.animate(
           [
             { transform: "translate(0,0) scale(1)" },
             {
@@ -36,12 +40,17 @@ export default function BrandIntro() {
           ],
           { duration: 800, easing: "cubic-bezier(.5,0,0,1)", fill: "forwards" },
         );
+        docking.onfinish = complete;
+      } else {
+        complete();
       }
-      hide = setTimeout(() => setFinished(true), 820);
     }, 2100);
     return () => {
       clearTimeout(start);
-      clearTimeout(hide);
+      if (docking) {
+        docking.onfinish = null;
+        docking.cancel();
+      }
       release();
     };
   }, []);

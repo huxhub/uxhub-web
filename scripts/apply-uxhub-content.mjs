@@ -531,3 +531,6 @@ console.log(
   Object.keys(pages).length,
   "pages; preserved template CSS and homepage sections.",
 );
+
+// Reapply the full scraped copy after regenerating the original layout slots.
+await import("./import-scraped-content.mjs");

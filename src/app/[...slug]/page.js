@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import pages from "@/content/pages.json";
 import legacy from "@/content/legacy-routes.json";
 import { metadataFor, pageSchemas } from "@/lib/seo";
+import TrialRegistration from "@/components/TrialRegistration";
 export function generateStaticParams() {
   return Object.keys(pages)
     .filter((key) => key !== "home")
@@ -23,6 +24,14 @@ export default async function Page({ params }) {
   if (key.startsWith("insights/")) redirect("/insights");
   const page = pages[key];
   if (!page) notFound();
+  if (key === "registration") {
+    return (
+      <>
+        <StructuredData data={pageSchemas(key)} />
+        <TrialRegistration />
+      </>
+    );
+  }
   return (
     <>
       <StructuredData data={pageSchemas(key)} />

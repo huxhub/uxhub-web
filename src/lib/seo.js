@@ -1,3 +1,5 @@
+import contentPages from "@/content/pages.json";
+
 export const SITE_URL = "https://uxhubglobal.com";
 
 export const ORGANIZATION_DESCRIPTION =
@@ -65,6 +67,16 @@ export const seoPages = {
       "Read UX Hub perspectives on software products, e-commerce, go-to-market strategy, UX/UI, technology, conversion and digital growth.",
   },
 };
+
+// Keep titles, descriptions and discoverable routes in sync with imported content.
+for (const [key, page] of Object.entries(contentPages)) {
+  seoPages[key] = {
+    ...seoPages[key],
+    path: key === "home" ? "/" : `/${key}`,
+    title: page.title,
+    description: page.description,
+  };
+}
 
 export const serviceNames = [
   "Custom software development",
@@ -173,9 +185,15 @@ export function pageSchemas(key) {
           name: "Home",
           item: SITE_URL,
         },
-        {
+        ...(key.startsWith("product/") ? [{
           "@type": "ListItem",
           position: 2,
+          name: "Products",
+          item: absoluteUrl("/product"),
+        }] : []),
+        {
+          "@type": "ListItem",
+          position: key.startsWith("product/") ? 3 : 2,
           name: page.title.split(" | ")[0],
           item: url,
         },

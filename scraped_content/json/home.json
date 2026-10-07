@@ -1,0 +1,262 @@
+{
+  "id": "home",
+  "label": "Homepage",
+  "url": "https://uxhubglobal.com/",
+  "canonical": "https://uxhubglobal.com/",
+  "scrapedAt": "2026-10-07T10:45:22.004Z",
+  "metadata": {
+    "title": "UX Hub | Digital Business Growth Consultancy & Enterprise Software | India & KSA",
+    "description": "UX Hub is a leading Digital Business Growth Consultancy & Software Solutions firm across India, Saudi Arabia & GCC. Build, launch & scale digital products, competitor price intelligence, and commerce growth.",
+    "keywords": "UX Hub, UX Hub Global, digital business growth consultancy, competitor price tracking software, dynamic repricing GCC, Saudi Arabia digital agency, e-commerce growth consultancy India KSA, market price intelligence software",
+    "openGraph": {
+      "title": "UX Hub | Digital Business Growth Consultancy & Software Solutions",
+      "description": "Build, launch and scale high-performing digital products, competitor price intelligence, and commerce growth across India & KSA.",
+      "image": "https://uxhubglobal.com/uxhub-logo.svg",
+      "url": "https://uxhubglobal.com/"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://uxhubglobal.com/#organization",
+            "name": "UX Hub",
+            "alternateName": [
+              "UX Hub Global",
+              "UXHub"
+            ],
+            "url": "https://uxhubglobal.com/",
+            "logo": "https://uxhubglobal.com/uxhub-logo.svg",
+            "description": "Digital Business Growth Consultancy & Enterprise Software Solutions provider across India and Saudi Arabia / GCC.",
+            "email": "nasik@uxhubglobal.com",
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "India"
+              },
+              {
+                "@type": "Country",
+                "name": "Saudi Arabia"
+              },
+              {
+                "@type": "Country",
+                "name": "United Arab Emirates"
+              },
+              {
+                "@type": "Country",
+                "name": "Kuwait"
+              },
+              {
+                "@type": "Country",
+                "name": "Qatar"
+              },
+              {
+                "@type": "Country",
+                "name": "Bahrain"
+              },
+              {
+                "@type": "Country",
+                "name": "Oman"
+              }
+            ],
+            "knowsAbout": [
+              "Competitor Price Intelligence Software",
+              "Automated Dynamic Repricing",
+              "E-commerce Growth & Scaling",
+              "0→1 Digital Product Engineering",
+              "Go-to-Market Strategy India KSA",
+              "Conversion Rate Optimization"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "UX Hub Services & Software Products",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "name": "UX Hub Pricing Super Intelligence",
+                    "applicationCategory": "BusinessApplication",
+                    "operatingSystem": "Web",
+                    "url": "https://uxhubglobal.com/product.html"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Digital Business Growth Consultancy",
+                    "url": "https://uxhubglobal.com/services.html"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://uxhubglobal.com/#website",
+            "url": "https://uxhubglobal.com/",
+            "name": "UX Hub Global",
+            "publisher": {
+              "@id": "https://uxhubglobal.com/#organization"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What software solutions does UX Hub provide for e-commerce?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "UX Hub provides Pricing Super Intelligence, an automated competitor price tracking, SKU matching, and dynamic repricing platform for brands across Amazon, Noon, Trendyol, Jarir, and e-commerce websites in India, Saudi Arabia, and the GCC."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "In which regions does UX Hub operate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "UX Hub operates across the India and Saudi Arabia (KSA) corridor, serving clients across India, UAE, Qatar, Kuwait, Bahrain, Oman, and globally."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    },
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    }
+  ],
+  "footer": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Build. Launch. Grow."
+    },
+    {
+      "level": "h2",
+      "text": "Turning digital opportunities into scalable businesses."
+    },
+    {
+      "level": "h2",
+      "text": "We build growth engines, not just digital assets."
+    },
+    {
+      "level": "h2",
+      "text": "From 0→1 to scalable growth."
+    },
+    {
+      "level": "h2",
+      "text": "Turn e-commerce into a growth engine."
+    },
+    {
+      "level": "h2",
+      "text": "Digital experiences built for growth."
+    },
+    {
+      "level": "h2",
+      "text": "We build businesses for the digital economy."
+    },
+    {
+      "level": "h2",
+      "text": "India ↔ KSA"
+    },
+    {
+      "level": "h2",
+      "text": "Built across industries."
+    },
+    {
+      "level": "h2",
+      "text": "Ready to buildwhat's next?"
+    }
+  ],
+  "forms": [],
+  "faqs": [],
+  "contentSummary": {
+    "totalHeadings": 10,
+    "totalForms": 0,
+    "totalFaqs": 0,
+    "characterCount": 4085,
+    "wordCount": 505
+  },
+  "markdown": "[![UX Hub](uxhub-logo.svg)](index.html) [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) **[Button: ]** [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) DIGITAL BUSINESS GROWTH CONSULTANCY \n\n# Build. Launch. Grow.\n\n## Turning digital opportunities into scalable businesses.\n\nWe help businesses across India and KSA build digital products, launch e-commerce businesses, create high-performing digital experiences and develop the growth engines needed to scale.\n\n [Start a Conversation](contact.html) [Explore What We Do](services.html) ** 0 ** 1 ** GROWTH ** SCALE 00 — 01 ZERO TO ONE INDIA ↔ KSA GROWTH TO SCALE \n\nBuilt for businesses that want to scale digitally\n\n ENTERPRISE D2C BRANDS SAAS PLATFORMS COMMERCE HUBS VENTURES WHAT WE DO \n\n## We build growth engines,\n not just digital assets.\n\nDigital growth doesn't come from a website, campaign or product in isolation. It comes from connecting strategy, technology, customer experience and growth.\n\n PRACTICE 01 — PRODUCT GROWTH \n\n## From 0→1 to scalable growth.\n\nWe help businesses identify opportunities, define products, validate ideas, build growth strategies and take digital products from concept to market and beyond.\n\n [Explore Product Growth](services.html) **01** 0→1 Product Strategy **02** Product Discovery **03** Product-Market Fit **04** Product Strategy **05** Growth Strategy **06** Go-to-Market Strategy **07** Product Analytics **08** Customer Journey **09** Conversion Optimization **10** Growth Roadmaps **11** Product Scaling CONCEPT ** MARKET ** SCALE PRACTICE 02 — E-COMMERCE GROWTH \n\n## Turn e-commerce into a growth engine.\n\nWe help brands build, optimize and scale e-commerce businesses across D2C and marketplace channels.\n\n [Explore E-commerce Growth](services.html) **01** E-commerce Strategy **02** Marketplace Growth **03** Performance Marketing **04** Conversion Rate Optimization **05** Competitor Analysis **06** Attribution **07** Data Analytics **08** CRM & Retention **09** Customer Acquisition **10** Marketplace Strategy **11** E-commerce Analytics **12** E-commerce P&L **13** Growth Planning TRAFFIC ** CONVERSION ** RETENTION PRACTICE 03 — DIGITAL EXPERIENCE \n\n## Digital experiences built for growth.\n\nWe design and develop premium digital experiences that combine brand, technology, usability and conversion.\n\n [Explore Digital Experience](services.html) **01** Premium Website Development **02** E-commerce Development **03** Shopify Development **04** Custom E-commerce **05** UX/UI Design **06** Conversion-focused Design **07** Digital Product Development **08** Platform Development **09** CRM Integrations **10** ERP Integrations **11** Analytics & Tracking BRAND ** EXPERIENCE ** GROWTH ABOUT UX HUB \n\n## We build businesses for the digital economy.\n\nUX Hub works at the intersection of product, e-commerce, technology and growth. Our approach combines strategy with execution. We don't just recommend what should happen. We help make it happen.\n\n [More About UX Hub](about.html) OUR MARKETS \n\n## India ↔ KSA\n\nTwo fast-growing economic corridors. One unified digital growth mindset.\n\n INDIA ** ** ** KSA INDUSTRIES \n\n## Built across industries.\n\n 01Retail & E-commerce 02Consumer Brands 03Real Estate 04Beauty & Lifestyle 05Travel & Hospitality 06Technology & SaaS 07B2B Enterprise 08Venture Startups START A CONVERSATION \n\n## Ready to build\nwhat's next?\n\nTell us what you're trying to build, launch or grow.\n\n [Start a Conversation](contact.html) [Explore Our Services](services.html) [![UX Hub](uxhub-logo.svg)](index.html) \n\nDigital Business Growth Consultancy\n\nIndia ↔ KSA\n\n [Services](services.html) [About](about.html) [Insights](insights.html) [Product](product.html) [Contact](contact.html) LinkedIn — Coming Soon © UX HUB. ALL RIGHTS RESERVED. BUILD · LAUNCH · GROW · SCALE"
+}

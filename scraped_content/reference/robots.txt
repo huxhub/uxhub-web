@@ -1,0 +1,52 @@
+# ==============================================================================
+# UX HUB - Robots.txt & AI Search Crawler Directives
+# Optimized for Google, Bing, and Generative AI Search Engines (GEO)
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /register.php
+Disallow: /scratch/
+
+# AI Search & LLM Web Crawlers (OpenAI ChatGPT, Perplexity, Claude, Gemini, Apple Intelligence)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Sitemaps & LLM Context Documents
+Sitemap: https://uxhubglobal.com/sitemap.xml
+# LLM Knowledge Index
+# https://uxhubglobal.com/llms.txt
+# https://uxhubglobal.com/llms-full.txt

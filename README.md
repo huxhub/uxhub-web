@@ -32,3 +32,31 @@ node scripts/verify.mjs
 ```
 
 Verification checks the animated hero, desktop font metrics, menu keyboard interaction, service accordions, dark scroll transition, routes and links, India/KSA tabs, mobile overflow, reduced motion, and stale company content. Temporary screenshots are written to the operating system's temporary directory. Set `PREVIEW_URL` to verify another port.
+
+## Importing UX Hub content
+
+Run `npm run content:import` after updating the archive with `node scripts/scrape-uxhub.mjs`.
+The importer reads the saved HTML and metadata locally, preserves existing page sections,
+and adds the complete page copy in the existing section/accordion design. Services uses
+three main practice sections with all 35 capabilities visible, rather than a collapsed
+content appendix. It also adds
+`/registration`, fills out the three practice pages, and keeps internal page links local.
+Repeated imports replace the imported sections instead of duplicating them.
+
+Original CSS, JavaScript, decorative SVGs, duplicated navigation, hidden confirmation
+messages, and the simulated sign-in are deliberately not imported. Contact and trial
+submission links lead to the original website: no working submission backend is present
+in this repository (the archived contact script only displays a success message).
+
+Run `node scripts/verify-content.mjs` against the running app to check copy coverage,
+accordion accessibility, and desktop/mobile overflow. `PREVIEW_URL` overrides localhost:3000.
+
+The product catalogue lives at `/product`; the complete Price Intelligence details live
+at `/product/price-intelligence`. The importer preserves this split and updates pricing
+links, while the main Product navigation and footer lead to the catalogue.
+
+The free-trial CTA leads to `/registration`. Its two-step form mirrors the business and
+store fields from the live UX Hub registration page. Valid requests are forwarded by
+`/api/trial-registration` to the official `uxhubglobal.com/register.php` service, which
+delivers the lead to the UX Hub email configured on that service. Password fields from
+the source page are intentionally omitted because the source submission does not send them.

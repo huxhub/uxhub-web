@@ -1,12 +1,95 @@
 {
-  "fetchedAt": "2026-10-07",
-  "sources": [
-    "https://uxhubglobal.com/",
-    "https://uxhubglobal.com/services.html",
-    "https://uxhubglobal.com/about.html",
-    "https://uxhubglobal.com/product.html",
-    "https://uxhubglobal.com/insights.html",
-    "https://uxhubglobal.com/contact.html"
+  "scrapedAt": "2026-10-07T10:45:24.866Z",
+  "pages": [
+    {
+      "route": "/",
+      "source": "https://uxhubglobal.com/",
+      "sections": [
+        "Build. Launch. Grow.",
+        "Businesses and industries",
+        "We build growth engines, not just digital assets.",
+        "From 0→1 to scalable growth.",
+        "Turn e-commerce into a growth engine.",
+        "Digital experiences built for growth.",
+        "We build businesses for the digital economy.",
+        "India ↔ KSA",
+        "Built across industries.",
+        "Ready to build what's next?"
+      ]
+    },
+    {
+      "route": "/services",
+      "source": "https://uxhubglobal.com/services.html",
+      "sections": [
+        "Strategy, technology and growth—connected.",
+        "From 0→1 to scalable growth.",
+        "Turn e-commerce into a growth engine.",
+        "Digital experiences built for growth.",
+        "Ready to build what's next?"
+      ]
+    },
+    {
+      "route": "/about",
+      "source": "https://uxhubglobal.com/about.html",
+      "sections": [
+        "We build businesses for the digital economy.",
+        "About UX Hub",
+        "Two markets. One growth mindset.",
+        "About UX Hub",
+        "Ready to build what's next?"
+      ]
+    },
+    {
+      "route": "/product/price-intelligence",
+      "source": "https://uxhubglobal.com/product.html",
+      "sections": [
+        "Are You Losing Sales Because Your Competitors Change Prices Before You Know It?",
+        "Your competitors are watching the market. You should be too.",
+        "Your competitors don't wait for your weekly pricing review.",
+        "MAP. MONITOR. REACT. WIN.",
+        "Built for GCC E-commerce",
+        "See what your competitors are doing across the channels that matter.",
+        "See the market. Not just your own store.",
+        "More than price tracking.",
+        "Built for teams that compete on price.",
+        "Stop discovering pricing problems after your sales drop.",
+        "Know when the market moves."
+      ]
+    },
+    {
+      "route": "/insights",
+      "source": "https://uxhubglobal.com/insights.html",
+      "sections": [
+        "Ideas for building digital growth.",
+        "Topics and upcoming articles",
+        "Ready to build what's next?"
+      ]
+    },
+    {
+      "route": "/contact",
+      "source": "https://uxhubglobal.com/contact.html",
+      "sections": [
+        "Let's talk growth."
+      ]
+    },
+    {
+      "route": "/registration",
+      "source": "https://uxhubglobal.com/registration.html",
+      "sections": [
+        "Welcome to Price2Spy",
+        "Register and try Price2Spy for free",
+        "Registration — Step 1",
+        "Registration — Step 2",
+        "Registration — Step 3"
+      ]
+    },
+    {
+      "route": "/product",
+      "sections": [
+        "Price Intelligence"
+      ],
+      "notes": "Product listing linking to the full product detail."
+    }
   ],
-  "notes": "Copy fitted to the existing page slots. No client logos, team biographies, investment claims, office addresses, contact emails, or published articles were invented. Inquiry and trial links use the official UX Hub forms."
+  "notes": "Source copy rendered with existing section, typography and disclosure styles. Navigation and decorative SVGs are not duplicated. Hidden success states and simulated login are excluded. Forms continue on the original website because their backends are not in this repository."
 }

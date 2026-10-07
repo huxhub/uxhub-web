@@ -1,0 +1,246 @@
+{
+  "id": "registration",
+  "label": "14-Day Free Trial Registration",
+  "url": "https://uxhubglobal.com/registration.html",
+  "canonical": "https://uxhubglobal.com/registration.html",
+  "scrapedAt": "2026-10-07T10:45:23.286Z",
+  "metadata": {
+    "title": "Register and try Price2Spy for free | 14-Day Free Trial | UX Hub",
+    "description": "Register and try Price2Spy for free. An all in one solution for product matching, price monitoring, dynamic pricing, pricing analytics, site scraping and a lot more!",
+    "keywords": "",
+    "openGraph": {
+      "title": "Register and try Price2Spy for free | 14-Day Free Trial",
+      "description": "Start your 14-day free trial of Price2Spy Pricing Super Intelligence. No credit card required.",
+      "image": "https://uxhubglobal.com/uxhub-logo.svg",
+      "url": "https://uxhubglobal.com/registration.html"
+    },
+    "jsonLd": []
+  },
+  "navigation": [],
+  "footer": [],
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Welcome to Price2Spy"
+    },
+    {
+      "level": "h2",
+      "text": "Register and try Price2Spy for free"
+    },
+    {
+      "level": "h3",
+      "text": "Thank you for registering!"
+    },
+    {
+      "level": "h3",
+      "text": "Price2Spy Sign In"
+    }
+  ],
+  "forms": [
+    {
+      "formId": "formStep1",
+      "action": "",
+      "method": "POST",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "select",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "select",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": "United States"
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "formId": "formStep2",
+      "action": "",
+      "method": "POST",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "url",
+          "name": "",
+          "placeholder": "https://yourstore.com",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "placeholder": "e.g. amazon.sa, noon.com",
+          "required": false,
+          "value": ""
+        },
+        {
+          "tag": "select",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": "100-500"
+        },
+        {
+          "tag": "select",
+          "type": "text",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": "Shopify"
+        },
+        {
+          "tag": "button",
+          "type": "button",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "formId": "formStep3",
+      "action": "",
+      "method": "POST",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "password",
+          "name": "",
+          "placeholder": "Minimum 8 characters",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "password",
+          "name": "",
+          "placeholder": "Repeat your password",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "value": "on"
+        },
+        {
+          "tag": "button",
+          "type": "button",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "formId": "form",
+      "action": "",
+      "method": "POST",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "",
+          "placeholder": "Business Email",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "password",
+          "name": "",
+          "placeholder": "Password",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "contentSummary": {
+    "totalHeadings": 4,
+    "totalForms": 4,
+    "totalFaqs": 0,
+    "characterCount": 1735,
+    "wordCount": 234
+  },
+  "markdown": "[Product](product.html) \n\n# Welcome to Price2Spy\n\nAn all in one solution for product matching, price monitoring, dynamic pricing, pricing analytics, site scraping and a lot more!\n\n## Register and try Price2Spy for free\n\n **[Button: English]** 🇬🇧 English 🇩🇪 Deutsch 🇫🇷 Français 🇪🇸 Español \n\n> **[Form: formStep1]**\n Name* [Field: text] Company role [Field: select] Business Email* [Field: email] Number of Employees* [Field: select] Company / Business name* [Field: text] Country [Field: text] I'm not a robot reCAPTCHA [Privacy](https://policies.google.com/privacy) - [Terms](https://policies.google.com/terms) **[Button: NEXT]** Already have an account? [Back to login page](#login) \n\n> **[Form: formStep2]**\n Your Store URL* [Field: url (https://yourstore.com)] Competitor Websites to Monitor [Field: text (e.g. amazon.sa, noon.com)] Number of Products / SKUs* [Field: select] E-commerce Platform [Field: select] **[Button: Back]** **[Button: NEXT]** Already have an account? [Back to login page](#login) \n\n> **[Form: formStep3]**\n Create Password* [Field: password (Minimum 8 characters)] Confirm Password* [Field: password (Repeat your password)] [Field: checkbox] I agree to the Terms of Service & 14-Day Trial terms. **[Button: Back]** **[Button: START 14-DAY TRIAL]** Already have an account? [Back to login page](#login) \n\n### Thank you for registering!\n\nYour trial request has been submitted. Our team will contact you at your business email with the next steps.\n\n [Go to Product](product.html) 1 Step 1 2 Step 2 3 Step 3 **[Button: ×]** \n\n### Price2Spy Sign In\n\nAccess your price intelligence dashboard\n\n> **[Form: Submission Form]**\n [Field: email (Business Email)] [Field: password (Password)] **[Button: Sign In]**"
+}

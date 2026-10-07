@@ -1,0 +1,205 @@
+{
+  "id": "contact",
+  "label": "Contact & Advisory",
+  "url": "https://uxhubglobal.com/contact.html",
+  "canonical": "https://uxhubglobal.com/contact.html",
+  "scrapedAt": "2026-10-07T10:45:23.066Z",
+  "metadata": {
+    "title": "Contact UX Hub | Digital Business Growth Consultancy | India & KSA",
+    "description": "Initiate engagement with UX Hub. Growth advisory, custom enterprise software, and competitor pricing solutions across India and Saudi Arabia (KSA).",
+    "keywords": "",
+    "openGraph": {
+      "title": "Contact UX Hub | Initiate Growth Engagement",
+      "description": "Tell us what you're trying to build, launch or grow across India and KSA.",
+      "image": "https://uxhubglobal.com/uxhub-logo.svg",
+      "url": "https://uxhubglobal.com/contact.html"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact UX Hub",
+        "description": "Get in touch with UX Hub for digital growth consultancy, enterprise pricing software, or regional market expansion in India and KSA.",
+        "url": "https://uxhubglobal.com/contact.html",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "UX Hub Global",
+          "email": "nasik@uxhubglobal.com",
+          "url": "https://uxhubglobal.com/"
+        }
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    },
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Price Intelligence",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    },
+    {
+      "text": "Start a Conversation",
+      "href": "contact.html"
+    }
+  ],
+  "footer": [
+    {
+      "text": "Services",
+      "href": "services.html"
+    },
+    {
+      "text": "About",
+      "href": "about.html"
+    },
+    {
+      "text": "Insights",
+      "href": "insights.html"
+    },
+    {
+      "text": "Product",
+      "href": "product.html"
+    },
+    {
+      "text": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "headings": [
+    {
+      "level": "h1",
+      "text": "Let's talkgrowth."
+    },
+    {
+      "level": "h2",
+      "text": "Thank you."
+    }
+  ],
+  "forms": [
+    {
+      "formId": "form",
+      "action": "#",
+      "method": "POST",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "name",
+          "placeholder": "Your full name",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "company",
+          "placeholder": "Company or organization",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "email",
+          "placeholder": "name@company.com",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "name": "phone",
+          "placeholder": "+91 / +966 number",
+          "required": false,
+          "value": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "country",
+          "placeholder": "India, Saudi Arabia, UAE, Global...",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "select",
+          "type": "text",
+          "name": "requirement",
+          "placeholder": "",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "textarea",
+          "type": "text",
+          "name": "message",
+          "placeholder": "Share the opportunity, challenge, timeline or growth targets.",
+          "required": true,
+          "value": ""
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "contentSummary": {
+    "totalHeadings": 2,
+    "totalForms": 1,
+    "totalFaqs": 0,
+    "characterCount": 1567,
+    "wordCount": 173
+  },
+  "markdown": "[![UX Hub](uxhub-logo.svg)](index.html) [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) **[Button: ]** [Services](services.html) [About](about.html) [Insights](insights.html) [Product](javascript:void(0)) [Price Intelligence](product.html) [Contact](contact.html) [Start a Conversation](contact.html) INITIATE ENGAGEMENT \n\n# Let's talk\ngrowth.\n\nTell us what you're trying to build, launch or grow across India and KSA.\n\n India ↔ KSA \n\n> **[Form: Submission Form]**\n Name [Field: text (Your full name)] Company [Field: text (Company or organization)] Work Email [Field: email (name@company.com)] Phone [Field: tel (+91 / +966 number)] Country / Location [Field: text (India, Saudi Arabia, UAE, Global...)] Requirement Scope [Field: select (requirement)] Project Brief [Field: textarea (Share the opportunity, challenge, timeline or growth targets.)] **[Button: Transmit Enquiry]** \n\nData transmission secured. No client data is shared with external parties.\n\n TRANSMISSION CONFIRMED — 01 \n\n## Thank you.\n\nWe have received your enquiry and our advisory team will be in touch within 24 hours.\n\n [Return to Home](index.html) [![UX Hub](uxhub-logo.svg)](index.html) \n\nDigital Business Growth Consultancy\n\nIndia ↔ KSA\n\n [Services](services.html) [About](about.html) [Insights](insights.html) [Product](product.html) [Contact](contact.html) LinkedIn — Coming Soon © UX HUB. ALL RIGHTS RESERVED. BUILD · LAUNCH · GROW · SCALE"
+}

@@ -61,9 +61,8 @@ export default function Header() {
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Link href="/" className="site-brand" onClick={close}>
+        <Link href="/" className="site-brand" aria-label="UX Hub home" onClick={close}>
           <BrandLogo />
-          <span>UX Hub</span>
         </Link>
         <button
           ref={trigger}
@@ -105,6 +104,16 @@ export default function Header() {
                     >
                       {label}
                     </Link>
+                    {href === "/product" && (
+                      <Link
+                        href="/product/price-intelligence"
+                        className="menu-product-child"
+                        onClick={close}
+                        aria-current={pathname === "/product/price-intelligence" ? "page" : undefined}
+                      >
+                        Price Intelligence
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -126,13 +135,13 @@ export default function Header() {
                 </span>
                 <span>↗</span>
               </Link>
-              <a href="https://uxhubglobal.com/registration.html">
+              <Link href="/registration" onClick={close}>
                 <span>
                   Start Your Free 14-Day Trial
                   <small>Pricing Super Intelligence</small>
                 </span>
                 <span>↗</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

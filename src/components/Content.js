@@ -1,4 +1,5 @@
 import parse, { domToReact } from "html-react-parser";
+import { cloneElement, isValidElement } from "react";
 import Link from "next/link";
 import Effects from "./Effects";
 import Places from "./Places";
@@ -6,6 +7,13 @@ import PageMotion from "./PageMotion";
 import BrandIntro from "./BrandIntro";
 import BrandLogo from "./BrandLogo";
 const options = {
+  transform(element, node) {
+    // HTML boolean attributes use presence; React expects an actual boolean.
+    if (isValidElement(element) && Object.hasOwn(node.attribs || {}, "inert")) {
+      return cloneElement(element, { inert: true });
+    }
+    return element;
+  },
   replace(node) {
     if (node.type !== "tag") return;
     if (node.name === "svg" && node.attribs.class?.includes("__wordmarkSymbol"))
