@@ -1,25 +1,27 @@
-# Cypher Capital recreation
+# UX Hub website
 
-A local Next.js 16 recreation of [cyphercapital.com](https://www.cyphercapital.com/), based on the reference available on 6 October 2026.
+UX Hub content from [uxhubglobal.com](https://uxhubglobal.com/), fitted to the existing Cypher-inspired layout. The page design, Instrument Sans typography, spacing tokens, chrome hero shader, scroll backgrounds, and responsive rules are retained. The loader animates the supplied `public/uxhub_logo.svg` with a staggered reveal, metallic sweep, and transition into the header.
 
 ```sh
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000. `npm run build` creates the production build; `npm start` serves it.
+Open http://localhost:3000. Use `npm run build` and `npm start` for production.
 
-The homepage preserves the reference's Instrument Sans font, responsive type sizes, spacing, section layouts, SVG artwork, liquid chrome WebGL hero, chrome symbol introduction, interpolated scroll background, dark theme transition, and footer. The navigation menu supports keyboard focus, Escape, and mobile layouts. Forty-one routes include the main pages, leadership biographies, and insights. Fonts and images are served locally.
+## Content
 
-- `src/components/` contains the interactive React components.
-- `src/content/pages.json` contains the captured page content, rendered as React elements on the server. Internal links use Next.js navigation.
-- `src/app/reference.css` preserves the reference's design tokens and responsive styling. `globals.css` supplies the interactive shell.
-- `src/lib/reference-effects.js` isolates the reference's procedural rendering primitives. It has no dependency on remote scripts or the original application runtime.
-- `scripts/capture-reference.mjs` refreshes the public content, CSS, and local image/font assets from the reference.
+The site has ten content routes: Home, About, Services, Product, Product Growth, E-commerce Growth, Digital Experience, Markets, Contact, and Insights. Content was fetched from the official UX Hub website on 7 October 2026; source URLs are recorded in `src/content/uxhub-sources.json`.
 
-The location image transition and interior-page text sheen use simpler treatments than the reference. Content is a local snapshot, not a live CMS integration. Shader highlights vary with animation time and GPU; exact pixel equality across devices is not expected.
+The official insights page currently lists four coming-soon articles. No former investment articles or biographies are presented as UX Hub content. Enquiry and trial calls to action open the official UX Hub contact and registration pages. Previous top-level routes redirect to their relevant replacements.
 
-## Verification
+- `src/content/pages.json`: current page content, rendered as React elements on the server.
+- `src/content/home.json` and `footer.json`: shared homepage and footer content.
+- `src/components/BrandIntro.js` and `BrandLogo.js`: animation using the supplied logo paths.
+- `src/app/reference.css`: unchanged layout, type, and responsive design rules.
+- `scripts/apply-uxhub-content.mjs`: repeatable content mapping using the preserved layout templates in `scripts/templates/`.
+
+## Checks
 
 With the development server running:
 
@@ -29,4 +31,4 @@ npm run build
 node scripts/verify.mjs
 ```
 
-Browser verification checks the animated hero, font metrics, menu/Escape behavior, theme transition, all 41 routes, image loading, profile navigation, location tabs, mobile overflow, and reduced motion. Screenshots are saved to `artifacts/`. Set `PREVIEW_URL` to verify a different local port.
+Verification checks the animated hero, desktop font metrics, menu keyboard interaction, service accordions, dark scroll transition, routes and links, India/KSA tabs, mobile overflow, reduced motion, and stale company content. Temporary screenshots are written to the operating system's temporary directory. Set `PREVIEW_URL` to verify another port.

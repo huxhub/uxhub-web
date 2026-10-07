@@ -3,10 +3,23 @@ import Link from "next/link";
 import Effects from "./Effects";
 import Places from "./Places";
 import PageMotion from "./PageMotion";
-import ChromeIntro from "./ChromeIntro";
+import BrandIntro from "./BrandIntro";
+import BrandLogo from "./BrandLogo";
 const options = {
   replace(node) {
     if (node.type !== "tag") return;
+    if (node.name === "svg" && node.attribs.class?.includes("__wordmarkSymbol"))
+      return (
+        <BrandLogo
+          className={node.attribs.class}
+          style={{
+            display: "block",
+            height: "var(--wordmark-symbol-height)",
+            width: "auto",
+            aspectRatio: "789 / 311",
+          }}
+        />
+      );
     if (
       node.name === "canvas" &&
       node.attribs.class?.includes("particle-image")
@@ -35,7 +48,7 @@ const options = {
 export default function Content({ html, home = false }) {
   return (
     <>
-      {home && <ChromeIntro />}
+      {home && <BrandIntro />}
       {parse(html, options)}
       {html.includes("<main") && <PageMotion home={home} />}
     </>

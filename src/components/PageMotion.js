@@ -18,12 +18,23 @@ export default function PageMotion({ home }) {
       { threshold: 0.06 },
     );
     groups.forEach((el) => observer.observe(el));
-    document
-      .querySelectorAll('[class*="wipe-button"][class*="root"]')
-      .forEach((el) => el.classList.add("local-wipe"));
     document.querySelectorAll("main").forEach((el) => {
       el.id = "main";
     });
+    const disclose = (event) => {
+      const button = event.target.closest(
+        'button[class*="disclosure-list"][aria-controls]',
+      );
+      if (!button) return;
+      const expanded = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(expanded));
+      button.parentElement.dataset.open = String(expanded);
+      const panel = document.getElementById(
+        button.getAttribute("aria-controls"),
+      );
+      if (panel) panel.inert = !expanded;
+    };
+    document.addEventListener("click", disclose);
     const updateTheme = () => {
       const infrastructure = document.getElementById("infrastructure");
       const dark =
@@ -38,6 +49,7 @@ export default function PageMotion({ home }) {
     window.addEventListener("scroll", updateTheme, { passive: true });
     return () => {
       observer.disconnect();
+      document.removeEventListener("click", disclose);
       window.removeEventListener("scroll", updateTheme);
     };
   }, [pathname, home]);

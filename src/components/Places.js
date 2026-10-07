@@ -6,7 +6,7 @@ export default function Places({ className }) {
     const canvas = ref.current,
       ctx = canvas.getContext("2d");
     if (!ctx) return;
-    let city = "Zurich",
+    let city = "India",
       frame,
       disposed = false;
     const image = new Image();
@@ -56,9 +56,10 @@ export default function Places({ className }) {
         .forEach((el) =>
           el.setAttribute("aria-pressed", String(el === button)),
         );
-      image.src = "/reference/" + city.toLowerCase() + ".webp";
+      image.src = "/uxhub/markets.png";
+      canvas.setAttribute("aria-label", "UX Hub markets: " + city);
     };
-    image.src = "/reference/zurich.webp";
+    image.src = "/uxhub/markets.png";
     document.addEventListener("click", choose);
     const observer = new ResizeObserver(() => {
       cancelAnimationFrame(frame);
@@ -76,7 +77,7 @@ export default function Places({ className }) {
     <canvas
       ref={ref}
       className={className}
-      aria-label="Cypher Capital locations"
+      aria-label="UX Hub markets: India and KSA"
       role="img"
     />
   );

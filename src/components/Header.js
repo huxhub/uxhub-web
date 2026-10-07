@@ -1,20 +1,21 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import BrandLogo from "./BrandLogo";
 import { usePathname } from "next/navigation";
 const primary = [
-  ["Cypher", "/"],
-  ["Philosophy", "/philosophy"],
-  ["Capabilities", "/capabilities"],
-  ["AI Infrastructure", "/ai-infrastructure"],
-  ["Access Formats", "/access-formats"],
+  ["UX Hub", "/"],
+  ["About", "/about"],
+  ["Services", "/services"],
+  ["Product", "/product"],
+  ["Contact", "/contact"],
 ];
 const secondary = [
-  ["Digital Multi-Strategy Fund", "/digital-multi-strategy-fund"],
-  ["Leadership", "/leadership"],
-  ["Risk Management", "/risk-management"],
+  ["Product Growth", "/product-growth"],
+  ["E-commerce Growth", "/e-commerce-growth"],
+  ["Digital Experience", "/digital-experience"],
   ["Insights", "/insights"],
-  ["Global presence", "/global-presence"],
+  ["India ↔ KSA", "/markets"],
 ];
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -61,14 +62,8 @@ export default function Header() {
           Skip to content
         </a>
         <Link href="/" className="site-brand" onClick={close}>
-          <svg viewBox="138.743 140 296.581 177.528" aria-hidden="true">
-            <path
-              fill="currentColor"
-              fillRule="evenodd"
-              d="M370.052 140C406.097 140 435.322 169.22 435.324 205.265C435.324 241.311 406.099 270.536 370.052 270.536H334.468C324.776 270.537 315.48 274.388 308.626 281.242L289.163 300.706C278.392 311.476 263.781 317.527 248.549 317.528H204.007C167.963 317.526 138.744 288.308 138.743 252.263C138.743 216.218 167.962 186.993 204.007 186.991H239.591C249.285 186.991 258.585 183.14 265.44 176.286L284.904 156.822C295.675 146.051 310.285 140 325.517 140H370.052ZM334.468 176.547C324.776 176.548 315.48 180.4 308.626 187.253L293.745 202.134C280.037 215.841 261.446 223.544 242.061 223.545H204.007C188.149 223.547 175.29 236.404 175.29 252.263C175.291 268.122 188.149 280.979 204.007 280.98H239.591C249.285 280.98 258.585 277.129 265.44 270.275L280.315 255.393C294.024 241.685 312.619 233.989 332.005 233.989H370.052C385.913 233.989 398.77 221.125 398.77 205.265C398.767 189.406 385.911 176.547 370.052 176.547H334.468Z"
-            />
-          </svg>
-          <span>Cypher Capital</span>
+          <BrandLogo />
+          <span>UX Hub</span>
         </Link>
         <button
           ref={trigger}
@@ -117,22 +112,24 @@ export default function Header() {
                 {secondary.map(([label, href]) => (
                   <li key={href}>
                     <Link href={href} onClick={close}>
-                      {label}
+                      <span className="menu-secondary-label">{label}</span>
                     </Link>
                   </li>
                 ))}
               </ul>
             </nav>
             <div className="menu-contacts">
-              <a href="mailto:info@cyphercapital.com">
+              <Link href="/contact" onClick={close}>
                 <span>
-                  info@cyphercapital.com<small>For general questions</small>
+                  Start a Conversation
+                  <small>Build, launch or grow with UX Hub</small>
                 </span>
                 <span>↗</span>
-              </a>
-              <a href="mailto:ir@cyphercapital.com">
+              </Link>
+              <a href="https://uxhubglobal.com/registration.html">
                 <span>
-                  ir@cyphercapital.com<small>For investor relations</small>
+                  Start Your Free 14-Day Trial
+                  <small>Pricing Super Intelligence</small>
                 </span>
                 <span>↗</span>
               </a>

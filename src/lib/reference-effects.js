@@ -6,9 +6,9 @@ const modules = {
     isOverlayLifted: () =>
       !document.documentElement.hasAttribute("data-intro-playing"),
     onOverlayLifted: (callback) => {
-      window.addEventListener("cypher:intro-finished", callback);
+      window.addEventListener("uxhub:intro-finished", callback);
       return () =>
-        window.removeEventListener("cypher:intro-finished", callback);
+        window.removeEventListener("uxhub:intro-finished", callback);
     },
   },
 };
@@ -2564,7 +2564,8 @@ export function createHero(canvas, options = {}) {
     return c.getContext("2d", { willReadFrequently: true });
   });
   const mask = maskModule.buildLiquidMask(
-    { width: window.innerWidth >= 1024 ? 2048 : 1024, shadeFloor: 0.35 },
+    // Match the homepage override; the generic 0.35 default makes the metal darker.
+    { width: window.innerWidth >= 1024 ? 2048 : 1024, shadeFloor: 0.6 },
     raster,
   );
   return read(852201).createLiquidRenderer(canvas, mask, {
