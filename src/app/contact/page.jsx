@@ -1,4 +1,4 @@
-import Places from "@/components/Places";
+import BrandLogo from "@/components/BrandLogo";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import PageMotion from "@/components/PageMotion";
@@ -104,7 +104,9 @@ export default function ContactPage() {
             </div>
             <div className="group-module__k4-mDG__group places-module__5EbJ9W__grid">
               <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade places-module__5EbJ9W__media" style={{"--stagger":"0"}}>
-                <Places className="particle-image-module__Fd8xsW__canvas places-module__5EbJ9W__particles" />
+                <div className="markets-brand" role="img" aria-label="UX Hub">
+                  <BrandLogo className="markets-brand-logo" />
+                </div>
               </div>
               <ul className="places-module__5EbJ9W__list">
                 <li>

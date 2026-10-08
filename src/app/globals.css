@@ -812,3 +812,96 @@ a[class*="wipe-button-module__-tlSna__root"]:focus-visible {
     max-width: 220px;
   }
 }
+
+.service-practice-section {
+  min-height: 0;
+}
+
+.service-practice-columns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Desktop split sections: the left column pins while the right scrolls.
+   Keep mobile in its original document flow. */
+@media (min-width: 1024px) {
+  [data-scroll-split] {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    column-gap: var(--spacing-xl3);
+  }
+
+  [data-scroll-split][data-scroll-split] {
+    min-height: 0;
+    align-content: start;
+  }
+
+  [data-scroll-split] > .capability-section-module__eDmFjG__header,
+  [data-scroll-split] > .capability-section-module__eDmFjG__listWrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  [data-scroll-split] .capability-section-module__eDmFjG__list {
+    grid-column: 1;
+  }
+
+  [data-scroll-split] > [data-scroll-sticky] {
+    position: sticky;
+    top: var(--sticky-top, 96px);
+    align-self: start;
+    min-width: 0;
+  }
+
+  [data-scroll-split] > .places-module__5EbJ9W__media { align-self: start; }
+
+}
+
+.service-practice-action {
+  margin-block: clamp(48px, 5vw, 80px);
+  width: 100%;
+  justify-self: stretch;
+  border-bottom-color: var(--color-foreground-30);
+}
+
+.service-practice-action > .wipe-button-module__-tlSna__content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.service-practice-action .wipe-button-module__-tlSna__ghost {
+  width: 100%;
+  padding-right: var(--pad-x);
+}
+
+.service-practice-action svg {
+  flex-shrink: 0;
+  transform: rotate(45deg);
+}
+
+/* Space between practices belongs outside their sticky content boundaries. */
+[data-service-practice] + [data-service-practice],
+[data-service-practice] + #start-a-conversation {
+  margin-top: clamp(64px, 8vw, 128px);
+}
+
+/* Give the About page's final accordion room before the shared footer. */
+#about-details {
+  margin-bottom: clamp(64px, 8vw, 128px);
+}
+
+/* The markets visual uses the existing UX Hub vector logo. */
+.markets-brand {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--color-foreground-100);
+}
+
+.markets-brand-logo {
+  display: block;
+  width: 76%;
+  height: auto;
+}

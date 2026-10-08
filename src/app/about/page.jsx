@@ -296,8 +296,8 @@ export default function AboutPage() {
           className="section-shell-module__wD-FXq__root"
           data-uxhub-content="about"
         >
-          <div className="container-module__fR7GYG__root container-module__fR7GYG__full section-shell-module__wD-FXq__inner section-shell-module__wD-FXq__full capability-section-module__eDmFjG__root">
-            <div className="group-module__k4-mDG__group capability-section-module__eDmFjG__header">
+          <div className="container-module__fR7GYG__root container-module__fR7GYG__full section-shell-module__wD-FXq__inner section-shell-module__wD-FXq__full capability-section-module__eDmFjG__root" data-scroll-split="">
+            <div className="group-module__k4-mDG__group capability-section-module__eDmFjG__header" data-scroll-sticky="">
               <p className="text-module__DYGPWq__root text-module__DYGPWq__headline-large text-module__DYGPWq__weight-medium capability-section-module__eDmFjG__number">
                 UX HUB
               </p>

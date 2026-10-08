@@ -82,6 +82,7 @@ node scripts/verify.mjs
 node scripts/verify-content.mjs
 node scripts/verify-hover.mjs
 node scripts/verify-intro.mjs
+node scripts/verify-sticky.mjs
 ```
 
 Set `PREVIEW_URL` to verify a different local port. Browser checks cover routes, links,
@@ -93,3 +94,8 @@ are written to the operating system's temporary directory.
 The free-trial CTA leads to `/registration`. Its two-step form submits business and
 store fields through `/api/trial-registration` to the official
 `uxhubglobal.com/register.php` service. This refactor preserves that behavior.
+
+Desktop split sections on Home, About, Insights, Markets, and Services use native sticky
+positioning. The left column pins while the right scrolls; mobile keeps the
+original stacked flow. `src/lib/sticky-sections.js` measures available space and
+expanded accordion heights without scroll-driven animation loops.

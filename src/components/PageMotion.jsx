@@ -1,9 +1,11 @@
 "use client";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { setupStickySections } from "@/lib/sticky-sections";
 export default function PageMotion({ home }) {
   const pathname = usePathname();
   useEffect(() => {
+    const cleanupStickySections = setupStickySections();
     const groups = document.querySelectorAll(
       '[class*="group-module"], [class*="infrastructure-module"][class*="root"]',
     );
@@ -21,18 +23,34 @@ export default function PageMotion({ home }) {
     document.querySelectorAll("main").forEach((el) => {
       el.id = "main";
     });
+    const setDisclosure = (trigger, expanded) => {
+      trigger.setAttribute("aria-expanded", String(expanded));
+      trigger.parentElement.dataset.open = String(expanded);
+      const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+      if (panel) panel.inert = !expanded;
+    };
     const disclose = (event) => {
+      const market = event.target.closest('[class*="places-module"][class*="trigger"]');
+      const marketSection = market?.closest('section');
+      if (marketSection?.querySelector('.markets-brand')) {
+        marketSection.querySelectorAll('[class*="places-module"][class*="trigger"]').forEach((button) => {
+          button.setAttribute('aria-pressed', String(button === market));
+        });
+      }
       const button = event.target.closest(
         'button[class*="disclosure-list"][aria-controls]',
       );
       if (!button) return;
       const expanded = button.getAttribute("aria-expanded") !== "true";
-      button.setAttribute("aria-expanded", String(expanded));
-      button.parentElement.dataset.open = String(expanded);
-      const panel = document.getElementById(
-        button.getAttribute("aria-controls"),
-      );
-      if (panel) panel.inert = !expanded;
+      const list = button.closest('[class*="disclosure-list-module__SPVnsG__root"]');
+      if (expanded && list) {
+        list
+          .querySelectorAll('button[class*="disclosure-list"][aria-expanded="true"]')
+          .forEach((trigger) => {
+            if (trigger !== button) setDisclosure(trigger, false);
+          });
+      }
+      setDisclosure(button, expanded);
     };
     document.addEventListener("click", disclose);
     const updateTheme = () => {
@@ -48,6 +66,7 @@ export default function PageMotion({ home }) {
     updateTheme();
     window.addEventListener("scroll", updateTheme, { passive: true });
     return () => {
+      cleanupStickySections();
       observer.disconnect();
       document.removeEventListener("click", disclose);
       window.removeEventListener("scroll", updateTheme);
