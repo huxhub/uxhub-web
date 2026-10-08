@@ -126,8 +126,12 @@ export default function ContactPage() {
                       </button>
                     </h3>
                     <p className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__color-foreground-50 places-module__5EbJ9W__rowBody">
-                      UXHUB, ADM 07, First Floor, Administrative building KINFRA Defence Park, Palakkad, Ottapalam 679 301<br/>
-                      <br/>uxhubglobal.com | hello@uxhub.in | +91 9745580881
+                      UXHUB, ADM 07, First Floor, Administrative Building, KINFRA Defence Park, Palakkad, Ottapalam 679 301<br /><br />
+                      <span className="india-contact-links">
+                        <a href="https://uxhubglobal.com" target="_blank" rel="noopener noreferrer">uxhubglobal.com</a>
+                        <a href="mailto:hello@uxhub.in">hello@uxhub.in</a>
+                        <a href="tel:+919745580881">+91 97455 80881</a>
+                      </span>
                     </p>
                   </div>
                 </li>

@@ -126,7 +126,12 @@ export default function MarketsPage() {
                       </button>
                     </h3>
                     <p className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__color-foreground-50 places-module__5EbJ9W__rowBody">
-                      UX Hub works with companies across India at the intersection of product, e-commerce, technology and growth.
+                      UXHUB, ADM 07, First Floor, Administrative Building, KINFRA Defence Park, Palakkad, Ottapalam 679 301<br /><br />
+                      <span className="india-contact-links">
+                        <a href="https://uxhubglobal.com" target="_blank" rel="noopener noreferrer">uxhubglobal.com</a>
+                        <a href="mailto:hello@uxhub.in">hello@uxhub.in</a>
+                        <a href="tel:+919745580881">+91 97455 80881</a>
+                      </span>
                     </p>
                   </div>
                 </li>

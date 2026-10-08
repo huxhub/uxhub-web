@@ -14,6 +14,9 @@ const secondary = [
   ["Product Growth", "/product-growth"],
   ["E-commerce Growth", "/e-commerce-growth"],
   ["Digital Experience", "/digital-experience"],
+];
+
+const footerNavigation = [
   ["Insights", "/insights"],
   ["India ↔ KSA", "/markets"],
 ];
@@ -157,23 +160,16 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
+              <ul className="menu-secondary">
+                {footerNavigation.map(([label, href]) => (
+                  <li key={href}>
+                    <Link href={href} onClick={close}>
+                      <span className="menu-secondary-label">{label}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </nav>
-            <div className="menu-contacts">
-              <Link href="/contact" onClick={close}>
-                <span>
-                  Start a Conversation
-                  <small>Build, launch or grow with UX Hub</small>
-                </span>
-                <span>↗</span>
-              </Link>
-              {/* <Link href="/registration" onClick={close}>
-                <span>
-                  Start Your Free 14-Day Trial
-                  <small>Pricing Super Intelligence</small>
-                </span>
-                <span>↗</span>
-              </Link> */}
-            </div>
           </div>
         </div>
       )}
