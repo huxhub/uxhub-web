@@ -102,7 +102,13 @@ export function metadataFor(key) {
   return {
     title: page.title,
     description: page.description,
-    alternates: { canonical: page.path },
+    alternates: {
+      canonical: page.path,
+      languages: {
+        en: page.path,
+        "x-default": page.path,
+      },
+    },
     openGraph: {
       type: "website",
       locale: "en_US",

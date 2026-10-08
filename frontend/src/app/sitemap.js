@@ -16,6 +16,7 @@ const priorities = {
 export default function sitemap() {
   return Object.entries(seoPages).map(([key, page]) => ({
     url: new URL(page.path, SITE_URL).toString(),
+    lastModified: new Date(),
     changeFrequency: key === "insights" ? "weekly" : "monthly",
     priority: priorities[key] ?? 0.7,
   }));

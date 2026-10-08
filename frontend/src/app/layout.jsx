@@ -37,7 +37,10 @@ export const metadata = {
   },
   verification: {
     other: {
-      "geo.region": ["IN", "SA"],
+      "geo.region": ["IN-KL", "SA-01"],
+      "geo.placename": ["Kochi, India", "Riyadh, Saudi Arabia"],
+      "geo.position": ["9.9312;76.2673", "24.7136;46.6753"],
+      ICBM: ["9.9312, 76.2673", "24.7136, 46.6753"],
     },
   },
 };

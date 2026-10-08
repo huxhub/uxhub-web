@@ -18,19 +18,19 @@ const pageMetadata = {
   },
   "product-growth": {
     "title": "Product Growth | UX Hub",
-    "description": "From 0→1 to scalable growth."
+    "description": "Take your digital product from zero to one and beyond with UX Hub's product strategy, MVP validation, go-to-market planning, analytics and scalable growth services across India and Saudi Arabia."
   },
   "e-commerce-growth": {
     "title": "E-commerce Growth | UX Hub",
-    "description": "Turn e-commerce into a growth engine."
+    "description": "Turn e-commerce into a high-performance growth engine with Shopify development, marketplace optimization, conversion rate optimization and data-driven scaling across India, KSA and the GCC."
   },
   "digital-experience": {
     "title": "Digital Experience | UX Hub",
-    "description": "Custom software and digital experiences built for growth."
+    "description": "Build premium custom software, websites and digital platforms with expert UX/UI design, CRM and ERP integrations, analytics dashboards and conversion-focused development from UX Hub."
   },
   "markets": {
     "title": "India ↔ KSA | UX Hub",
-    "description": "Two fast-growing economic corridors. One unified digital growth mindset."
+    "description": "UX Hub operates across India and Saudi Arabia, two of the fastest-growing digital economies. One unified growth mindset powering cross-border software and e-commerce expansion."
   },
   "contact": {
     "title": "Contact UX Hub | Digital Business Growth Consultancy | India & KSA",
