@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <StructuredData data={pageSchemas("home")} />
-      <BrandIntro />
+      {/* <BrandIntro /> */}
       <main className="page-shell-module__L3Btcq__root page-shell-module__L3Btcq__bleed">
         <section className="section-shell-module__wD-FXq__root">
           <div className="container-module__fR7GYG__root container-module__fR7GYG__full section-shell-module__wD-FXq__inner section-shell-module__wD-FXq__full hero-module__kIxoYa__root">
@@ -80,7 +80,7 @@ export default function HomePage() {
             </h1>
             <a className="wipe-button-module__-tlSna__root hero-module__kIxoYa__cta" href="#capabilities">
               <span className="wipe-button-module__-tlSna__content">
-                <span className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__weight-medium">
+                <span className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__weight-medium ">
                   Explore our services
                 </span>
               </span>
@@ -106,7 +106,7 @@ export default function HomePage() {
             <div className="container-module__fR7GYG__root container-module__fR7GYG__full section-shell-module__wD-FXq__inner section-shell-module__wD-FXq__full capabilities-module__3LfQ_G__root">
               <div className="group-module__k4-mDG__group">
                 <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade" style={{"--stagger":"0"}}>
-                  <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider">
+                  <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider section-label-left">
                     <span className="text-module__DYGPWq__root text-module__DYGPWq__label-medium text-module__DYGPWq__weight-medium section-label-module__mAQ0IG__text">
                       Services
                     </span>
@@ -181,7 +181,7 @@ export default function HomePage() {
               <div className="group-module__k4-mDG__group proprietary-investments-module__ku_iAW__intro">
                 <div className="section-intro-module__A3g2Mq__root">
                   <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade" style={{"--stagger":"0"}}>
-                    <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider">
+                    <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider section-label-left">
                       <span className="text-module__DYGPWq__root text-module__DYGPWq__label-medium text-module__DYGPWq__weight-medium section-label-module__mAQ0IG__text">
                         About UX Hub
                       </span>

@@ -72,7 +72,7 @@ export default function ContactPage() {
           <div className="container-module__fR7GYG__root container-module__fR7GYG__full section-shell-module__wD-FXq__inner places-module__5EbJ9W__root">
             <div className="group-module__k4-mDG__group">
               <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade" style={{"--stagger":"0"}}>
-                <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider">
+                <div className="section-label-module__mAQ0IG__root section-label-module__mAQ0IG__divider section-label-left">
                   <span className="text-module__DYGPWq__root text-module__DYGPWq__label-medium text-module__DYGPWq__weight-medium section-label-module__mAQ0IG__text">
                     Our Markets
                   </span>
@@ -126,7 +126,8 @@ export default function ContactPage() {
                       </button>
                     </h3>
                     <p className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__color-foreground-50 places-module__5EbJ9W__rowBody">
-                      UX Hub works with companies across India at the intersection of product, e-commerce, technology and growth.
+                      UXHUB, ADM 07, First Floor, Administrative building KINFRA Defence Park, Palakkad, Ottapalam 679 301<br/>
+                      <br/>uxhubglobal.com | hello@uxhub.in | +91 9745580881
                     </p>
                   </div>
                 </li>

@@ -13,7 +13,7 @@ export default function BrandLogo({ className, style }) {
         <path
           key={index}
           d={path.d}
-          fill="currentColor"
+          fill={path.fill || "currentColor"}
           fillRule={path.fillRule}
           style={{ "--part": index }}
         />

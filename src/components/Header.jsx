@@ -19,9 +19,24 @@ const secondary = [
 ];
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
+  const closingRef = useRef(false);
   const dialog = useRef(null);
   const trigger = useRef(null);
   const pathname = usePathname();
+
+  const close = () => {
+    if (closingRef.current || !open) return;
+    closingRef.current = true;
+    setClosing(true);
+    setTimeout(() => {
+      setOpen(false);
+      setClosing(false);
+      closingRef.current = false;
+      trigger.current?.focus();
+    }, 400);
+  };
+
   useEffect(() => {
     if (!open) return;
     const old = document.body.style.overflow;
@@ -29,8 +44,7 @@ export default function Header() {
     dialog.current?.querySelector("button")?.focus();
     const key = (e) => {
       if (e.key === "Escape") {
-        setOpen(false);
-        trigger.current?.focus();
+        close();
       }
       if (e.key === "Tab") {
         const all = dialog.current?.querySelectorAll("a,button");
@@ -51,13 +65,9 @@ export default function Header() {
       document.removeEventListener("keydown", key);
     };
   }, [open]);
-  const close = () => {
-    setOpen(false);
-    trigger.current?.focus();
-  };
   return (
     <>
-      <header className="site-header">
+      <header className={`site-header${pathname === "/" ? " home-header" : ""}`}>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
@@ -68,23 +78,26 @@ export default function Header() {
           ref={trigger}
           className="menu-trigger"
           aria-haspopup="dialog"
-          aria-expanded={open}
+          aria-expanded={open && !closing}
           aria-controls="site-menu"
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            if (closingRef.current) return;
+            setOpen(true);
+          }}
         >
           Menu
         </button>
       </header>
       {open && (
         <div
-          className="menu-layer"
+          className={`menu-layer${closing ? " menu-layer-closing" : ""}`}
           onClick={(e) => {
             if (e.target === e.currentTarget) close();
           }}
         >
           <div
             ref={dialog}
-            className="menu-panel"
+            className={`menu-panel${closing ? " menu-panel-closing" : ""}`}
             role="dialog"
             aria-modal="true"
             aria-label="Site navigation"

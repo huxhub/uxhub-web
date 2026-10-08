@@ -245,14 +245,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="container-module__fR7GYG__root container-module__fR7GYG__full styles-module__a-jQEa__wordmark">
-          <span className="text-module__DYGPWq__root text-module__DYGPWq__display-fluid styles-module__a-jQEa__wordmarkWord">
-            UX
-          </span>
-          <BrandLogo className="styles-module__a-jQEa__wordmarkSymbol" style={{"display":"block","height":"var(--wordmark-symbol-height)","width":"auto","aspectRatio":"789 / 311"}} />
-          <span className="text-module__DYGPWq__root text-module__DYGPWq__display-fluid styles-module__a-jQEa__wordmarkWord">
-            Hub
-          </span>
+        <div className="container-module__fR7GYG__root container-module__fR7GYG__full footer-wordmark">
+          <BrandLogo className="footer-brand-logo" />
         </div>
       </footer>
     </>
