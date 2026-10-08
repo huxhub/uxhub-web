@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import BrandLogo from "./BrandLogo";
 import { usePathname } from "next/navigation";
@@ -17,15 +17,18 @@ const secondary = [
   ["Insights", "/insights"],
   ["India ↔ KSA", "/markets"],
 ];
+
+const productChildren = [["Price Intelligence", "/product/price-intelligence"]];
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState(null);
   const [closing, setClosing] = useState(false);
   const closingRef = useRef(false);
   const dialog = useRef(null);
   const trigger = useRef(null);
   const pathname = usePathname();
 
-  const close = () => {
+  const close = useCallback(() => {
     if (closingRef.current || !open) return;
     closingRef.current = true;
     setClosing(true);
@@ -35,7 +38,7 @@ export default function Header() {
       closingRef.current = false;
       trigger.current?.focus();
     }, 400);
-  };
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -64,7 +67,7 @@ export default function Header() {
       document.body.style.overflow = old;
       document.removeEventListener("keydown", key);
     };
-  }, [open]);
+  }, [open, close]);
   return (
     <>
       <header className={`site-header${pathname === "/" ? " home-header" : ""}`}>
@@ -110,32 +113,47 @@ export default function Header() {
               <ul className="menu-primary">
                 {primary.map(([label, href]) => (
                   <li key={href}>
-                    <Link
-                      href={href}
-                      onClick={close}
-                      aria-current={pathname === href ? "page" : undefined}
-                    >
-                      {label}
-                    </Link>
-                    {href === "/product" && (
-                      <Link
-                        href="/product/price-intelligence"
-                        className="menu-product-child"
-                        onClick={close}
-                        aria-current={pathname === "/product/price-intelligence" ? "page" : undefined}
+                    {href === "/services" || href === "/product" ? (
+                      <button
+                        className="menu-parent-trigger"
+                        type="button"
+                        aria-expanded={submenuOpen === href}
+                        onClick={() => setSubmenuOpen(submenuOpen === href ? null : href)}
                       >
-                        Price Intelligence
+                        <span>{label}</span>
+                        <span className="menu-parent-chevron" aria-hidden="true">⌄</span>
+                      </button>
+                    ) : (
+                      <Link
+                        href={href}
+                        onClick={close}
+                        aria-current={pathname === href ? "page" : undefined}
+                      >
+                        {label}
                       </Link>
                     )}
-                  </li>
-                ))}
-              </ul>
-              <ul className="menu-secondary">
-                {secondary.map(([label, href]) => (
-                  <li key={href}>
-                    <Link href={href} onClick={close}>
-                      <span className="menu-secondary-label">{label}</span>
-                    </Link>
+                    {href === "/services" && (
+                      <ul className={`menu-submenu${submenuOpen === href ? " menu-submenu-open" : ""}`} aria-label="Services submenu">
+                        {secondary.map(([childLabel, childHref]) => (
+                          <li key={childHref}>
+                            <Link href={childHref} onClick={close} aria-current={pathname === childHref ? "page" : undefined}>
+                              {childLabel}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {href === "/product" && (
+                      <ul className={`menu-submenu${submenuOpen === href ? " menu-submenu-open" : ""}`} aria-label="Product submenu">
+                        {productChildren.map(([childLabel, childHref]) => (
+                          <li key={childHref}>
+                            <Link href={childHref} onClick={close} aria-current={pathname === childHref ? "page" : undefined}>
+                              {childLabel}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>
