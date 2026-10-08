@@ -1,6 +1,6 @@
 # UX Hub website
 
-UX Hub content from [uxhubglobal.com](https://uxhubglobal.com/), fitted to the existing Cypher-inspired layout. The page design, Instrument Sans typography, spacing tokens, chrome hero shader, scroll backgrounds, and responsive rules are retained. The loader animates the supplied `public/uxhub_logo.svg` with a staggered reveal, metallic sweep, and transition into the header.
+A Next.js website with directly editable JSX pages. Page markup lives in source files, not HTML strings inside JSON. The existing layouts, CSS, animations, and responsive styles are preserved.
 
 ```sh
 npm install
@@ -9,54 +9,87 @@ npm run dev
 
 Open http://localhost:3000. Use `npm run build` and `npm start` for production.
 
-## Content
+## Source structure
 
-The site has ten content routes: Home, About, Services, Product, Product Growth, E-commerce Growth, Digital Experience, Markets, Contact, and Insights. Content was fetched from the official UX Hub website on 7 October 2026; source URLs are recorded in `src/content/uxhub-sources.json`.
+```text
+src/
+  app/
+    page.jsx                         # Home
+    layout.jsx                       # Shared header, footer, and global styles
+    about/page.jsx
+    services/page.jsx
+    product/page.jsx                 # Product catalogue
+    product/price-intelligence/page.jsx
+    product-growth/page.jsx
+    e-commerce-growth/page.jsx
+    digital-experience/page.jsx
+    markets/page.jsx
+    contact/page.jsx
+    insights/page.jsx
+    registration/page.jsx
+    [...slug]/page.jsx               # Legacy redirects and unknown-route handling
+    api/trial-registration/route.js
+    globals.css
+    reference.css
+    price-intelligence.css
+  components/                       # Shared React components (.jsx)
+    Header.jsx
+    Footer.jsx
+    TrialRegistration.jsx
+    BrandIntro.jsx
+    BrandLogo.jsx
+    Effects.jsx
+    HoverEffects.jsx
+    PageMotion.jsx
+    Places.jsx
+    StructuredData.jsx
+  data/                             # Small JavaScript data modules; no page markup
+    page-metadata.js
+    legacy-routes.js
+    brand.js
+  lib/                              # SEO and animation utilities
+public/                             # Images, fonts, and other static assets
+scraped_content/                    # HTML fixtures and metadata for content checks
+scripts/                            # Browser verification
+```
 
-The official insights page currently lists four coming-soon articles. No former investment articles or biographies are presented as UX Hub content. Enquiry and trial calls to action open the official UX Hub contact and registration pages. Previous top-level routes redirect to their relevant replacements.
+## Editing pages
 
-- `src/content/pages.json`: current page content, rendered as React elements on the server.
-- `src/content/home.json` and `footer.json`: shared homepage and footer content.
-- `src/components/BrandIntro.js` and `BrandLogo.js`: animation using the supplied logo paths.
-- `src/app/reference.css`: unchanged layout, type, and responsive design rules.
-- `scripts/apply-uxhub-content.mjs`: repeatable content mapping using the preserved layout templates in `scripts/templates/`.
+Edit the JSX in the corresponding `src/app/**/page.jsx` file. Edit shared navigation in
+`src/components/Header.jsx` and the footer in `src/components/Footer.jsx`. Page titles
+and descriptions are in `src/data/page-metadata.js`; SEO helpers remain in `src/lib/seo.js`.
+
+Existing CSS class names and inline style values are deliberately preserved because
+styles and animation selectors depend on them. Components containing JSX use `.jsx`;
+plain utilities, route handlers, and Next.js metadata endpoints use `.js`.
+
+The former JSON renderer, content import scripts, and scraper have been removed.
+JSX is the source of truth. `scraped_content/html/` and its index are retained only
+as fixtures for the source-copy verification checks. Project configuration and
+fixture metadata remain JSON data, not executable page markup.
 
 ## Checks
-
-With the development server running:
 
 ```sh
 npm run lint
 npm run build
-node scripts/verify.mjs
 ```
 
-Verification checks the animated hero, desktop font metrics, menu keyboard interaction, service accordions, dark scroll transition, routes and links, India/KSA tabs, mobile overflow, reduced motion, and stale company content. Temporary screenshots are written to the operating system's temporary directory. Set `PREVIEW_URL` to verify another port.
+With the development server running:
 
-## Importing UX Hub content
+```sh
+node scripts/verify.mjs
+node scripts/verify-content.mjs
+node scripts/verify-hover.mjs
+node scripts/verify-intro.mjs
+```
 
-Run `npm run content:import` after updating the archive with `node scripts/scrape-uxhub.mjs`.
-The importer reads the saved HTML and metadata locally, preserves existing page sections,
-and adds the complete page copy in the existing section/accordion design. Services uses
-three main practice sections with all 35 capabilities visible, rather than a collapsed
-content appendix. It also adds
-`/registration`, fills out the three practice pages, and keeps internal page links local.
-Repeated imports replace the imported sections instead of duplicating them.
+Set `PREVIEW_URL` to verify a different local port. Browser checks cover routes, links,
+animations, desktop/mobile overflow, accordions, and source-copy coverage. Screenshots
+are written to the operating system's temporary directory.
 
-Original CSS, JavaScript, decorative SVGs, duplicated navigation, hidden confirmation
-messages, and the simulated sign-in are deliberately not imported. Contact and trial
-submission links lead to the original website: no working submission backend is present
-in this repository (the archived contact script only displays a success message).
+## Trial registration
 
-Run `node scripts/verify-content.mjs` against the running app to check copy coverage,
-accordion accessibility, and desktop/mobile overflow. `PREVIEW_URL` overrides localhost:3000.
-
-The product catalogue lives at `/product`; the complete Price Intelligence details live
-at `/product/price-intelligence`. The importer preserves this split and updates pricing
-links, while the main Product navigation and footer lead to the catalogue.
-
-The free-trial CTA leads to `/registration`. Its two-step form mirrors the business and
-store fields from the live UX Hub registration page. Valid requests are forwarded by
-`/api/trial-registration` to the official `uxhubglobal.com/register.php` service, which
-delivers the lead to the UX Hub email configured on that service. Password fields from
-the source page are intentionally omitted because the source submission does not send them.
+The free-trial CTA leads to `/registration`. Its two-step form submits business and
+store fields through `/api/trial-registration` to the official
+`uxhubglobal.com/register.php` service. This refactor preserves that behavior.

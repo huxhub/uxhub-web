@@ -1,4 +1,4 @@
-import contentPages from "@/content/pages.json";
+import contentPages from "@/data/page-metadata";
 
 export const SITE_URL = "https://uxhubglobal.com";
 
@@ -68,7 +68,7 @@ export const seoPages = {
   },
 };
 
-// Keep titles, descriptions and discoverable routes in sync with imported content.
+// Keep titles, descriptions and discoverable routes in sync with page metadata.
 for (const [key, page] of Object.entries(contentPages)) {
   seoPages[key] = {
     ...seoPages[key],

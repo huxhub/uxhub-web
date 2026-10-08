@@ -3,7 +3,8 @@ import fs from 'node:fs/promises';
 import { load } from 'cheerio';
 import { chromium } from '@playwright/test';
 
-const pages = JSON.parse(await fs.readFile('src/content/pages.json', 'utf8'));
+import pages from '../src/data/page-metadata.js';
+const base = process.env.PREVIEW_URL || 'http://localhost:3000';
 const index = JSON.parse(await fs.readFile('scraped_content/index.json', 'utf8'));
 const normalize = (text) => text.replace(/\s+/g, ' ').trim();
 for (const { id } of index.pages) {
@@ -11,9 +12,19 @@ for (const { id } of index.pages) {
   $('br').replaceWith(' ');
   $('script,style,svg,header,footer,button,#form-success,#panelStepSuccess,#loginModal,.p2s-lang-selector,.p2s-stepper-wrap').remove();
   const root = id === 'registration' ? $('.p2s-page-container') : $('main');
-  const target = load(pages[id === 'product' ? 'product/price-intelligence' : id].html);
+  const route = id === 'product' ? 'product/price-intelligence' : id === 'home' ? '' : id;
+  const response = await fetch(`${base}/${route}`);
+  assert.equal(response.status, 200, id);
+  const target = load(await response.text());
+  target('script, header, footer').remove();
   const text = normalize(target('body').text());
-  root.find('*').contents().each((_, node) => {
+  // Registration already uses a custom React form, not the archived third-party copy.
+  if (id === 'registration') {
+    assert.equal(target('main.trial-page').length, 1);
+    for (const name of ['name', 'email', 'company', 'country', 'role', 'employees']) {
+      assert.equal(target(`[name="${name}"]`).length, 1, `registration: missing ${name}`);
+    }
+  } else root.find('*').contents().each((_, node) => {
     if (node.type !== 'text') return;
     const copy = normalize(node.data);
     if (copy.length > 2) assert.ok(text.includes(copy), `${id}: missing ${copy}`);
@@ -59,7 +70,7 @@ try {
     }
   }
   assert.deepEqual(errors, []);
-  console.log('Verified source-copy coverage for all seven pages, unique accordion IDs, and styled desktop/mobile accordions on every route without horizontal overflow or browser errors.');
+  console.log('Verified archived copy for six pages, the custom registration form, unique accordion IDs, and styled desktop/mobile accordions on every route without horizontal overflow or browser errors.');
 } finally {
   await browser.close();
 }

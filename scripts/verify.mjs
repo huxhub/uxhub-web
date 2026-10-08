@@ -58,7 +58,7 @@ try {
   await page.waitForTimeout(1600);
   assert.equal(await page.locator("html").getAttribute("data-theme"), "dark");
   await page.screenshot({ path: path.join(artifacts, "infrastructure.png") });
-  const pages = JSON.parse(await fs.readFile("src/content/pages.json", "utf8"));
+  const { default: pages } = await import("../src/data/page-metadata.js");
   for (const route of Object.keys(pages)) {
     const response = await page.request.get(
       base + "/" + (route === "home" ? "" : route),
