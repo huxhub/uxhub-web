@@ -78,7 +78,7 @@ export default function HomePage() {
                 business.
               </span>
             </h1>
-            <a className="wipe-button-module__-tlSna__root hero-module__kIxoYa__cta" href="#capabilities">
+            <Link className="wipe-button-module__-tlSna__root hero-module__kIxoYa__cta" href="/services">
               <span className="wipe-button-module__-tlSna__content">
                 <span className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__weight-medium ">
                   Explore our services
@@ -87,7 +87,7 @@ export default function HomePage() {
               <span className="wipe-button-module__-tlSna__sweep" aria-hidden="true">
 
               </span>
-            </a>
+            </Link>
             <div className="home-hero-note" data-home-hero-note="">
               <span>
                 Digital Business Growth Consultancy

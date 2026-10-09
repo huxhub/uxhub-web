@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <>
       <StructuredData data={pageSchemas("contact")} />
-      <main className="page-shell-module__L3Btcq__root">
+      <main className="page-shell-module__L3Btcq__root contact-page">
         <div className="container-module__fR7GYG__root container-module__fR7GYG__full">
           <div className="page-title-module__wYBNpq__inner ruled">
             <h1 className="text-module__DYGPWq__root text-module__DYGPWq__display-fluid text-module__DYGPWq__weight-medium page-title-module__wYBNpq__title">
@@ -193,11 +193,9 @@ export default function ContactPage() {
             </div>
             <div className="group-module__k4-mDG__group contacts-module__Yeh81W__grid">
               <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade-up" style={{"--stagger":"0"}}>
-                <a
+                <Link
                   className="action-row-module__cLECvq__root ruled action-row-module__cLECvq__fill action-row-module__cLECvq__lg"
-                  href="https://uxhubglobal.com/contact.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/contact/enquiry"
                 >
                   <span className="action-row-module__cLECvq__text">
                     <span className="text-module__DYGPWq__root text-module__DYGPWq__headline-large">
@@ -227,7 +225,7 @@ export default function ContactPage() {
                   <span className="action-row-module__cLECvq__sweep">
 
                   </span>
-                </a>
+                </Link>
               </div>
               <div className="reveal-module__nuDBzW__root reveal-module__nuDBzW__fade-up" style={{"--stagger":"1"}}>
                 <Link
@@ -342,7 +340,7 @@ export default function ContactPage() {
                                   Tell us what you&apos;re trying to build, launch or grow across India and KSA.
                                 </p>
                                 {" "}
-                                <div className="copy-stack ">
+                                <div className="copy-stack" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                                   {"India "}
                                   <span className="copy-inline">
                                     ↔
@@ -413,7 +411,15 @@ export default function ContactPage() {
                               </div>
                             </div>
                           </div>
-                          <a className="wipe-button-module__-tlSna__root disclosure-list-module__SPVnsG__link" href="https://uxhubglobal.com/contact.html">
+                          <Link className="wipe-button-module__-tlSna__root disclosure-list-module__SPVnsG__link" href="/contact/enquiry">
+                            <span className="wipe-button-module__-tlSna__content">
+                              <span className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__weight-medium">
+                                Transmit Enquiry
+                              </span>
+                              <span aria-hidden="true">↗</span>
+                            </span>
+                          </Link>
+                          {/*
                             <span className="wipe-button-module__-tlSna__content">
                               <span className="text-module__DYGPWq__root text-module__DYGPWq__body-large text-module__DYGPWq__weight-medium">
                                 Transmit Enquiry — Continue to UX Hub
@@ -437,7 +443,7 @@ export default function ContactPage() {
                             <span className="wipe-button-module__-tlSna__sweep" aria-hidden="true">
 
                             </span>
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
