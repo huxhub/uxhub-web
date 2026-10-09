@@ -1208,6 +1208,28 @@ a[class*="wipe-button-module__-tlSna__root"]:focus-visible {
   margin-top: 90px;
 }
 
+/* Keep the home-page intro copy on the intended body measure. */
+.capabilities-module__3LfQ_G__intro .section-intro-module__A3g2Mq__title,
+.capabilities-module__3LfQ_G__intro .section-intro-module__A3g2Mq__body,
+.proprietary-investments-module__ku_iAW__intro .section-intro-module__A3g2Mq__title,
+.proprietary-investments-module__ku_iAW__intro .section-intro-module__A3g2Mq__body {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .capabilities-module__3LfQ_G__intro .section-intro-module__A3g2Mq__title,
+  .capabilities-module__3LfQ_G__intro .section-intro-module__A3g2Mq__body,
+  .proprietary-investments-module__ku_iAW__intro .section-intro-module__A3g2Mq__title,
+  .proprietary-investments-module__ku_iAW__intro .section-intro-module__A3g2Mq__body {
+    max-width: calc(50% - var(--spacing-xl) / 2);
+  }
+}
+
+.capabilities-module__3LfQ_G__intro .section-intro-module__A3g2Mq__body > .reveal-module__nuDBzW__fade {
+  width: auto;
+}
+
 /* Stretch all sub-content across the site */
 :root {
   --measure-body: 840px;
